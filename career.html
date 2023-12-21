@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bumper</title>
+    <link rel="stylesheet" type="text/css" href="css/career.css">
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const careerTitleSvg = document.querySelector('.career_title svg');
+        careerTitleSvg.addEventListener('click', function() {
+          parent.postMessage({ closeSidebar: true }, '*');
+        });
+      });
+    </script>
+
+</head>
+<body style="margin: 0;">
+
+  <div class="career_container">
+
+    <div class="career_title">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
+        <path d="M 39.486328 6.9785156 A 1.50015 1.50015 0 0 0 38.439453 7.4394531 L 24 21.878906 L 9.5605469 7.4394531 A 1.50015 1.50015 0 0 0 8.484375 6.984375 A 1.50015 1.50015 0 0 0 7.4394531 9.5605469 L 21.878906 24 L 7.4394531 38.439453 A 1.50015 1.50015 0 1 0 9.5605469 40.560547 L 24 26.121094 L 38.439453 40.560547 A 1.50015 1.50015 0 1 0 40.560547 38.439453 L 26.121094 24 L 40.560547 9.5605469 A 1.50015 1.50015 0 0 0 39.486328 6.9785156 z"></path>
+      </svg>
+      <p class="career_title_text">CAREER MENU</p>
+    </div>
+
+    <div class="career_options">
+
+      <div class="career_pages">
+        <div class="career_start">
+          <a class="career_start_link" href="https://bumper-1692709783.teamtailor.com/">
+            <p class="career_start_text">START</p>
+          </a>
+        </div>
+        <div class="career_start no-margin">
+          <a class="career_start_link" href="https://bumper-1692709783.teamtailor.com/">
+            <p class="career_start_text">JOBS</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="career_links">
+        <div>
+          <p class="link_title">Employee</p>
+          <a class="link_context" href="https://app.teamtailor.com/login">Log in</a>
+        </div>
+        <div>
+          <p class="link_title">Candidate</p>
+          <a class="link_context" href="https://bumper-1692709783.teamtailor.com/connect/login">Log in to Connect</a>
+        </div>
+        <div>
+          <p class="link_title">Homepage</p>
+          <a class="link_context" href="https://www.bumper.co/">bumper.co</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+</html>

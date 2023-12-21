@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bumper</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/cover.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/company_values.css">
+    <link rel="stylesheet" type="text/css" href="css/images.css">
+    <link rel="stylesheet" type="text/css" href="css/perks_and_benefits.css">
+    <link rel="stylesheet" type="text/css" href="css/retreat.css">
+    <link rel="stylesheet" type="text/css" href="css/trophy.css">
+    <link rel="stylesheet" type="text/css" href="css/hiring.css">
+    <link rel="stylesheet" type="text/css" href="css/automotive.css">
+    <link rel="stylesheet" type="text/css" href="css/pride.css">
+    <link rel="stylesheet" type="text/css" href="css/job_openings.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/address.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body onload="updateAddress()">
+<div style="display: flex;flex-direction: column;">
+
+  <!-- Cover -->
+
+  <div class="body">
+    <div class="title">
+
+      <div class="menu_item">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="24px" height="24px">
+          <g fill=transparent fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g></svg>
+        <p style="color: white;">CAREER MENU</p>
+      </div>
+
+      <div class="logo_title">
+        <img class="logo" src="images/logo_black_white.png">
+        <h1 class="logo_text">| CAREERS</h1>
+      </div>
+
+      <div class="dropdown">
+        <button style="background-color: transparent"><img class="logo_icon" src="images/arrow-up-from-bracket.svg" /></button>
+        <div class="dropdown-content">
+          <a class="cover_social" href="https://www.facebook.com/Bumperpay/">
+            <div style="display: flex;align-items: center">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30"><path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z"></path></svg>
+            </div>
+            <p style="color: black">Facebook</p>
+          </a>
+          <a class="cover_social" href="https://twitter.com/bumperpay">
+            <div style="display: flex;align-items: center">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"><path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path></svg>
+            </div>
+            <p style="color: black">X</p>
+          </a>
+          <a class="cover_social" href="https://www.linkedin.com/company/bumperpay/mycompany/">
+            <div style="display: flex;align-items: center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 30 30" width="30px" height="30px"><path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"/></svg>
+            </div>
+            <p style="color: black">LinkedIn</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover_text">
+      <h1 class="cover_title">YOUR NEXT ADVENTURE. SORTED.</h1>
+      <div class="buttons">
+        <a class="button_connect" href="https://bumper-1692709783.teamtailor.com/connect">Connect</a>
+        <a class="button_job" onclick="scrollDownJobOpenings()" >Job opening</a>
+      </div>
+    </div>
+
+    <button class="scroll_down" onclick="scrollDown()" >
+      <svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+        <g id="SVGRepo_iconCarrier">
+          <path d="M9 11L12 14L15 11M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </svg>
+    </button>
+
+  </div>
+
+  <!-- About -->
+
+  <div class="about_section layout_padding ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 image_about">
+          <div class="about_image_container"><img style="border-radius: 2%" src="images/about.png"></div>
+        </div>
+        <div class="col-md-6">
+          <h1 class="about_title" >"WE HELP DRIVERS STAY ON THE ROAD, WITHOUT BREAKING THE BANK."</h1>
+          <p class="about_text">Back in 2016, our founders James and Jack, set out to solve a very real problem; being landed with a big, unexpected car repair bill. Today we're a team of over 70 colleagues, spread across several different countries, all working towards the same goal. We help drivers stay on the road, without breaking the bank. As a multi-award-winning digital payments platform for the automotive industry, we partner with over 4,000 automotive retailers helping drivers pay for motoring costs, accessories and other services through a variety of different payment options. In January 2022, we completed our Series A funding round and established ourselves as a rapidly scaling start-up in the fast-growing Buy Now, Pay Later (BNPL) market which is worth over $90 billion in Europe alone.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Company Values -->
+  <div class="values_section">
+    <div class="values">
+      <img style="border-radius: 2%" src="images/vision.png">
+      <p class="values_text">To be the world’s largest automotive payments platform.</p>
+    </div>
+    <div class="values">
+      <img style="border-radius: 2%" src="images/mission.png">
+      <p class="values_text">To build payment solutions that enable our partners to help keep drivers safely on the road, whilst improving their profitability and customer experience.</p>
+    </div>
+    <div class="values">
+      <img style="border-radius: 2%" src="images/guiding_principles.png">
+      <p class="values_text">Along with our Vision and Mission, our Guiding Principles help form the way we work - how we behave, communicate, make decisions, and work with each other.</p>
+    </div>
+    <div class="values">
+      <img style="border-radius: 2%" src="images/think_big.png">
+      <p class="values_text">We<br><span style="font-weight: bold">think big</span><br>together</p>
+    </div>
+    <div class="values">
+      <img style="border-radius: 2%" src="images/make_it_happen.png">
+      <p class="values_text">We<br><span style="font-weight: bold;">make it happen</span><br>together</p>
+    </div>
+    <div class="values">
+      <img style="border-radius: 2%" src="images/celebrate_success.png">
+      <p class="values_text">We<br><span style="font-weight: bold">celebrate success</span><br>together</p>
+    </div>
+
+  </div>
+
+  <!-- Images 1 -->
+
+  <div class="images1_section">
+    <img src="images/image1.png">
+    <img src="images/image2.png">
+    <img src="images/image3.png">
+  </div>
+
+  <!-- Perks & Benefits -->
+  <div class="perks_and_benefits_section">
+
+    <h1 class="title_perks_and_benefits">PERKS & BENEFITS</h1>
+
+    <div class="items">
+
+      <div class="values_margin">
+        <img style="border-radius: 2%" src="images/Icons-perks-parasol-black-light.jpg">
+        <h1 class="values_title">Relax and Recharge</h1>
+        <p class="values_text">26 days of paid leave each year to do whatever it is that recharges your batteries.</p>
+      </div>
+
+      <div class="values_margin">
+        <img style="border-radius: 2%" src="images/Icons-perks-home-laptop-black-light.jpg">
+        <h1 class="values_title">Bumper Flex</h1>
+        <p class="values_text_perks">We all work in different ways. Bumper Flex brings you the best of both worlds, home & office.</p>
+      </div>
+
+      <div class="values_margin">
+        <img style="border-radius: 2%" src="images/Icons-perks-plane-black-light.jpg">
+        <h1 class="values_title">Annual Retreat</h1>
+        <p class="values_text_perks">Remote working is fab. But nothing beats getting to know each other in person.</p>
+      </div>
+
+
+      <div class="values_margin">
+        <img style="border-radius: 2%" src="images/Icons-perks-heart-black-light.jpg">
+        <h1 class="values_title">Personal Enhancement Allowance</h1>
+        <p class="values_text_perks">£250 a year to spend on your personal wellbeing and development, simple as that!</p>
+      </div>
+
+
+      <div class="values_margin">
+        <img style="border-radius: 2%" src="images/Icons-perks-carriage-black-light.jpg">
+        <h1 class="values_title">Family Leave</h1>
+        <p class="values_text_perks">4 months' paid leave for primary carers & 1 month for secondary carers. Your family comes first.</p>
+      </div>
+
+
+      <div class="values_margin">
+        <img style="border-radius: 2%" src="images/Icons-perks-car-wrench-black-light.jpg">
+        <h1 class="values_title">Colleague Discount</h1>
+        <p class="values_text_perks">Discount on Bumper loans for you, your friends, and family - Boom!</p>
+      </div>
+
+
+      <div class="values_margin">
+        <img style="border-radius: 2%" src="images/Icons-perks-stethescope-black-light.jpg">
+        <h1 class="values_title">Colleague Assistance Programme</h1>
+        <p class="values_text_perks">A platform that access to support, guidance and counselling, available 24/7</p>
+      </div>
+
+
+      <div class="values_margin">
+        <img style="border-radius: 2%" src="images/Icons-perks-car-leaf-black-light.jpg">
+        <h1 class="values_title">Bumper Foundation</h1>
+        <p class="values_text_perks">We're carbon neutral & offer paid leave each year to give back, in whatever way you choose.</p>
+      </div>
+
+
+      <div class="values_margin">
+        <img style="border-radius: 2%" src="images/Icons-perks-graph-black-light.jpg">
+        <h1 class="values_title">Share Options</h1>
+        <p class="values_text_perks">Our people drive our success. We reward that hard work with ownership in the company.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Retreat -->
+  <div style="display:flex;flex-direction: column">
+    <div class="wrapper" style="display: flex;">
+      <div class="col-lg-6 col-md-12 col-sm-12 text_container">
+        <h1 class="retreat_title">BUMPER RETREAT - COSTA BRAVA 2023</h1>
+        <p class="retreat_text">One of the great perks of joining the Bumper family is getting to take part in our annual Bumper Retreat. </p>
+        <p class="retreat_text">In 2023, we jetted off to sunny Costa Brava for 3 days of sun, sea and strategy! All teams from the UK, Spain, Germany, the Netherlands and Turkey came together on the first morning for our monthly Company Update, before heading out to either have a cycling tour of the area, kayaking in the sea, or a wine tasting trip! The following day was spent chilling by the pool, exploring the town, or relaxing on the beach, and finished with a surprise Catamaran trip, complete with a DJ, bar, and a swim in the Balearic Sea.</p>
+        <p class="retreat_text">These trips are a great opportunity for teams from across the world to come together to collaborate and celebrate our success!</p>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 carousel_slide">
+        <ol class="carousel-indicators"  >
+          <li data-target="#myCarousel" data-slide-to="0" class="active" onclick="$('.carousel_slide').carousel(0)"></li>
+          <li data-target="#myCarousel" data-slide-to="1" onclick="$('.carousel_slide').carousel(1)"></li>
+          <li data-target="#myCarousel" data-slide-to="2" onclick="$('.carousel_slide').carousel(2)"></li>
+          <li data-target="#myCarousel" data-slide-to="3" onclick="$('.carousel_slide').carousel(3)"></li>
+          <li data-target="#myCarousel" data-slide-to="5" onclick="$('.carousel_slide').carousel(4)"></li>
+        </ol>
+        <div class="carousel-inner" style="height: 100%" >
+          <div class="item active" style="height: 100%"><img class="image_retreat"  style="height: 100%;object-fit:cover" src="images/retreat_image1.png"></div>
+          <div class="item" style="height: 100%"><img class="image_retreat" style="height: 100%;object-fit:cover" src="images/retreat_image2.png"></div>
+          <div class="item" style="height: 100%"><img class="image_retreat" style="height: 100%;object-fit:cover" src="images/retreat_image3.png"></div>
+          <div class="item" style="height: 100%"><img class="image_retreat" style="height: 100%;object-fit:cover" src="images/retreat_image4.png"></div>
+          <div class="item" style="height: 100%"><img class="image_retreat" style="height: 100%;object-fit:cover" src="images/retreat_image5.png"></div>
+        </div>
+      </div>
+    </div>
+    <div class="images_section">
+      <img src="images/retreat_image6.png">
+      <img src="images/retreat_image7.png">
+      <img src="images/retreat_image8.png">
+      <img src="images/retreat_image9.png">
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $('.carousel_slide').carousel({
+        interval: false
+      });
+    });
+  </script>
+
+  <!-- Trophy -->
+
+  <div class="trophy_section layout_padding ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" >
+          <div class="image_trophy"><img style="border-radius: 2%" src="images/trophy.png"></div>
+        </div>
+        <div class="col-md-6" style="display:flex;flex-direction:column;justify-content: center" >
+          <h1 class="trophy_title" >OUR TROPHY CABINET</h1>
+          <p class="trophy_text">Just like we love to recognise our people, we also love to be recognised for all our hard work. So here's a snapshot of the awards we've won. We're not boasting, we're just very proud that all our dedication and commitment is paying off.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hiring -->
+
+  <div class="hiring_section layout_padding ">
+    <div class="col-md-6">
+      <h1 class="hiring_title">HIRING DIVERSE TALENT</h1>
+      <p class="hiring_text">Everyone is unique. And that's something we encourage here at Bumper. We actively look for applicants from all walks of life and we are an equal opportunity employer committed to creating an inclusive environment. If there is anything you need to participate fully in the interview process we’d like to hear about that too, just let us know when you apply.  </p>
+    </div>
+  </div>
+
+  <!-- Automotive -->
+  <div class="automotive_section layout_padding ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ">
+          <h1 class="automotive_title" >AUTOMOTIVE 30% CLUB</h1>
+          <p class="automotive_text">We've joined the
+            <a href="https://www.automotive30club.co.uk/" style="color: #ff733c; font-weight: 700">Automotive Thirty Percent Club</a>
+            which has the purpose of achieving a better gender balance within the automotive industry, and with the aim of filling at least 30% of key leadership positions in the member organisations with diverse women by 2030 through a “30 by 30” strategy.</p>
+        </div>
+        <div class="col-md-6 automotive_image_container">
+          <div class="image automotive_image"><img style="border-radius: 2%" src="images/automotive.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pride -->
+
+  <div class="pride_section layout_padding ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 image_pride">
+          <div class="image image_container"><img style="border-radius: 2%" src="images/pride.png"></div>
+        </div>
+        <div class="col-md-6">
+          <h1 class="pride_title">DRIVING PRIDE</h1>
+          <p class="pride_text">We're a member of
+            <a href="https://drivingpride.org/" style="color: #ff733c; font-weight: 700">Driving Pride</a>
+            , a network of automotive companies working to promote LGBT+ inclusivity across the industry. The organisation aims to provide a safe and supportive space for LGBT+ people within the automotive industry, by running events for employees, sharing resources for companies to improve inclusivity, and providing a forum for employees to discuss professional development.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Job Openings -->
+
+  <div class="job_section" id="job_openings">
+    <p class="job_title">JOB OPENINGS</p>
+    <a class="job_button" href="https://bumper-1692709783.teamtailor.com/jobs/3435857-customer-support-agent">
+      <p style="color: #ff733b; font-size: 21px">Customer Support Agent</p>
+      <p style="color: #000000; font-size: 21px">Operations · Sheffield</p>
+    </a>
+    <a class="job_button" href="https://bumper-1692709783.teamtailor.com/jobs/3420791-people-administrator-turkey">
+      <p style="color: #ff733b;font-size: 21px">People Administrator - Turkey</p>
+      <p style="color: #000000;font-size: 21px">Sales · Remote UK · Fully Remote <img src="images/wifi_black.svg" alt="WiFi icon" style="margin-bottom: 3px"></p>
+    </a>
+    <a class="job_button" href="https://bumper-1692709783.teamtailor.com/jobs/3372200-account-manager-south-wales-south-west">
+      <p style="color: #ff733b;font-size: 21px">Account Manager - South Wales & South West</p>
+      <p style="color: #000000;font-size: 21px">People Team · Ankara · Hybrid <img src="images/wifi_black.svg" alt="WiFi icon" style="margin-bottom: 3px"></p>
+    </a>
+    <a class="all_jobs_button" href="https://bumper-1692709783.teamtailor.com/jobs">
+      <p style="color: white">All Jobs</p>
+      <img src="images/right_arrow.svg" alt="Arrow icon" style="align-self: center">
+    </a>
+  </div>
+
+  <!-- Address -->
+  <div class="address_section">
+    <div class= "map-container-select">
+      <label class="form-select"  for="locations" style="width: 300px;">
+        <select class="select"  name="locations" id="locations"  onchange="updateAddress()" >
+          <option value="sheffield">Sheffield</option>
+          <option value="ankara">Ankara</option>
+          <option value="berlin">Berlin</option>
+          <option value="hammersmith">Hammersmith</option>
+          <option value="remoteUk">Remote UK</option>
+        </select>
+      </label>
+
+      <div id="addressOutput"></div>
+
+    </div>
+
+    <div id="mapOutput" class="map-container"></div>
+
+    <script>
+      function updateAddress() {
+        const select = document.getElementById("locations");
+        const selectedOption =  select.options[select.selectedIndex].index || 0
+        console.log('selectedOption', selectedOption)
+        const addresses = [
+          {address: "32 Eyre St <br>S1 4QY Sheffield",
+            link_address: "https://www.google.com/maps?daddr=53.3765615,-1.471043",
+            link_mail: "mailto:people@bumper.co",
+            mapLocation: "https://www.openstreetmap.org/export/embed.html?bbox=-1.4749574661254885%2C53.373622715659316%2C-1.4727044105529787%2C53.3747812381087&amp;layer=mapnik&amp;marker=53.374201980823074%2C-1.4738309383392334"
+          },
+          {address: "10. Sk. No:31 <br> 06980 Kahramankazan",
+            link_address:"https://www.google.com/maps/dir//40.0342621,32.6142739/@40.0342329,32.531873,12z?entry=ttu",
+            link_mail: "mailto:people@bumper.co",
+            mapLocation: "https://www.openstreetmap.org/export/embed.html?bbox=32.80816912651063%2C39.88168394982042%2C32.817181348800666%2C39.887644374581086&amp;layer=mapnik&amp;marker=39.88466422697154%2C32.81267523765564" },
+          {address: "Berlin",
+            link_address: "https://www.google.com/maps/dir//Berlin,Germany",
+            link_mail: null,
+            mapLocation: "https://www.openstreetmap.org/export/embed.html?bbox=13.406710624694826%2C52.49775327900285%2C13.44275951385498%2C52.51666482631437&amp;layer=mapnik&amp;marker=52.507200237660626%2C13.42475294999997"},
+          {address: "Saint Martins House <br>W6 0NB London" ,
+            link_address: "https://www.google.com/maps/dir//51.4935132,-0.2263848/@51.4932445,-0.3094786,12z?entry=ttu",
+            link_mail: "mailto:people@bumper.co",
+            mapLocation: "https://www.openstreetmap.org/export/embed.html?bbox=-0.23030519485473636%2C51.49093656235483%2C-0.2212929725646973%2C51.49577276019911&amp;layer=mapnik&amp;marker=51.49335472541077%2C-0.2257990837097168" },
+          {address: "32 Eyre St <br>S1 4QY Sheffield",
+            link_address: "https://www.google.com/maps/dir//53.3765615,-1.471043/@53.3765331,-1.5534431,12z?entry=ttu",
+            link_mail: null,
+            mapLocation:"https://www.openstreetmap.org/export/embed.html?bbox=-1.4749574661254885%2C53.373622715659316%2C-1.4727044105529787%2C53.3747812381087&amp;layer=mapnik&amp;marker=53.37420155032136%2C-1.473830850000013" }
+        ]
+
+        const selectedAddress =  addresses[selectedOption] ||  addresses[0];
+
+        const addressOutput = document.getElementById("addressOutput");
+        addressOutput.innerHTML = "<p class='address_text'>" + selectedAddress.address + "</p>";
+        addressOutput.innerHTML += " <p class='address_text'> <a style='color: #000;' href='" + selectedAddress.link_address + "' target='_blank'>Directions</a></p>";
+
+        const mapOutput = document.getElementById('mapOutput')
+        mapOutput.innerHTML ="<iframe width='425' height='350' class='map-container' src='"+ selectedAddress.mapLocation +"' style='border: 1px transparent'></iframe>";
+
+        if (selectedAddress.link_mail !== null )
+          addressOutput.innerHTML += "<p class='address_text'><a style='color: #000;' href='" + selectedAddress.link_mail + "' target='_blank'>people@bumper.co</a></p>";
+        else
+          addressOutput.innerHTML += "<p></p>";
+
+      }
+
+    </script>
+  </div>
+
+  <!-- Images 2 -->
+
+  <div class="images2_section_container">
+    <div class="image_section">
+      <div class="image_wrapper_1">
+        <img src="images/image4.png" />
+      </div>
+      <div class="image_wrapper_2">
+        <img src="images/image5.png" />
+      </div>
+    </div>
+
+    <div class="image_section">
+      <div class="image_wrapper_2">
+        <img src="images/image6.png" />
+      </div>
+      <div class="image_wrapper_1">
+        <img src="images/image7.png" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+
+  <div class="footer_section">
+    <div>
+      <div class="pages">
+        <div class="links"><a class="footer_link" href="https://bumper-1692709783.teamtailor.com/">Start</a></div>
+        <div class="links"><a class="footer_link" href="https://bumper-1692709783.teamtailor.com/jobs">Jobs</a></div>
+        <div class="links"><a class="footer_link" href="https://bumper-1692709783.teamtailor.com/data-privacy">Data & privacy</a></div>
+        <div class="links"><a class="footer_link" href="https://bumper-1692709783.teamtailor.com/">Manage cookies</a></div>
+      </div>
+      <div class="social">
+        <a href="https://twitter.com/bumperpay">
+          <svg class="footer_icon" xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 30 30" width="50px" height="50px"><path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/Bumperpay/">
+          <svg class="footer_icon" xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 30 30" width="50px" height="50px"><path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/bumperpay/mycompany/">
+          <svg class="footer_icon" xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 30 30" width="50px" height="50px">    <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"/></svg>            </a>
+        <a href="https://www.instagram.com/bumperpay/">
+          <svg class="footer_icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" fill="#000" width="50px" height="50px"><path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/></svg>            </a>
+      </div>
+      <div style="text-align: center">
+        <a class="footer_text" href="https://www.bumper.co/">bumper.co</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const menuButton = document.querySelector('.menu_item svg');
+    const sidebarContainer = document.createElement('div');
+    sidebarContainer.classList.add('sidebar-container');
+
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+
+    const sidebar = document.createElement('div');
+    sidebar.classList.add('sidebar');
+    sidebarContainer.appendChild(sidebar);
+
+    document.body.appendChild(overlay);
+    document.body.appendChild(sidebarContainer);
+
+    menuButton.addEventListener('click', function() {
+    sidebarContainer.style.display = 'block';
+    overlay.style.display = 'block';
+    sidebar.innerHTML = '<iframe src="career.html" frameborder="0"></iframe>';
+  });
+
+    overlay.addEventListener('click', function() {
+    sidebarContainer.style.display = 'none';
+    overlay.style.display = 'none';
+    sidebar.innerHTML = '';
+  });
+
+    window.addEventListener('message', function(event) {
+    if (event.data.closeSidebar) {
+    sidebarContainer.style.display = 'none';
+    overlay.style.display = 'none';
+    sidebar.innerHTML = '';
+  }
+  });
+  });
+
+
+  function scrollDown() {
+    var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    var scrollAmount = screenHeight;
+    window.scrollBy({
+      top: scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+    function scrollDownJobOpenings() {
+    var jobOpeningsSection = document.getElementById('job_openings');
+    if (jobOpeningsSection) {
+    var jobOpeningsSectionTop = jobOpeningsSection.offsetTop;
+    window.scroll({
+    top: jobOpeningsSectionTop,
+    behavior: 'smooth'
+  });
+  }
+  }
+
+</script>
+
+</body>
+</html>

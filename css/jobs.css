@@ -1,0 +1,31 @@
+
+.title {
+    background-color: #b2b2b2;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu_item{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.logo_title{
+    display: flex;
+    flex-direction: row;
+}
+.logo_icon,
+.logo{
+    width: 96px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.logo_text {
+    color: white;
+    margin-top: 15px;
+    font-weight: 400;
+    margin-left: 10px;
+}

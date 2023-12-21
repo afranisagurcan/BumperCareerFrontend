@@ -1,0 +1,38 @@
+.about_section{
+    width: 100%;
+    float: left;
+    background-color: #1b1b1b ;
+    height:100%;
+}
+.layout_padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about_image_container {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.image_about {
+    align-items: center;
+    display: flex;
+}
+.about_title {
+    width: 100%;
+    float: left;
+    font-size: 25px;
+    color: #ff733b;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.about_text {
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    color: #ffffff;
+}

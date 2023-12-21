@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bumper</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/retreat.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div style="display:flex;flex-direction: column">
+    <div class="wrapper" style="display: flex;">
+        <div class="col-lg-6 col-md-12 col-sm-12 text_container">
+            <h1 class="retreat_title">BUMPER RETREAT - COSTA BRAVA 2023</h1>
+            <p class="retreat_text">One of the great perks of joining the Bumper family is getting to take part in our annual Bumper Retreat. </p>
+            <p class="retreat_text">In 2023, we jetted off to sunny Costa Brava for 3 days of sun, sea and strategy! All teams from the UK, Spain, Germany, the Netherlands and Turkey came together on the first morning for our monthly Company Update, before heading out to either have a cycling tour of the area, kayaking in the sea, or a wine tasting trip! The following day was spent chilling by the pool, exploring the town, or relaxing on the beach, and finished with a surprise Catamaran trip, complete with a DJ, bar, and a swim in the Balearic Sea.</p>
+            <p class="retreat_text">These trips are a great opportunity for teams from across the world to come together to collaborate and celebrate our success!</p>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 carousel_slide">
+            <ol class="carousel-indicators"  >
+                <li data-target="#myCarousel" data-slide-to="0" class="active" onclick="$('.carousel_slide').carousel(0)"></li>
+                <li data-target="#myCarousel" data-slide-to="1" onclick="$('.carousel_slide').carousel(1)"></li>
+                <li data-target="#myCarousel" data-slide-to="2" onclick="$('.carousel_slide').carousel(2)"></li>
+                <li data-target="#myCarousel" data-slide-to="3" onclick="$('.carousel_slide').carousel(3)"></li>
+                <li data-target="#myCarousel" data-slide-to="5" onclick="$('.carousel_slide').carousel(4)"></li>
+            </ol>
+            <div class="carousel-inner" style="height: 100%" >
+                <div class="item active" style="height: 100%"><img class="image_retreat"  style="height: 100%;object-fit:cover" src="images/retreat_image1.png"></div>
+                <div class="item" style="height: 100%"><img class="image_retreat" style="height: 100%;object-fit:cover" src="images/retreat_image2.png"></div>
+                <div class="item" style="height: 100%"><img class="image_retreat" style="height: 100%;object-fit:cover" src="images/retreat_image3.png"></div>
+                <div class="item" style="height: 100%"><img class="image_retreat" style="height: 100%;object-fit:cover" src="images/retreat_image4.png"></div>
+                <div class="item" style="height: 100%"><img class="image_retreat" style="height: 100%;object-fit:cover" src="images/retreat_image5.png"></div>
+            </div>
+        </div>
+    </div>
+    <div class="images_section">
+        <img src="images/retreat_image6.png">
+        <img src="images/retreat_image7.png">
+        <img src="images/retreat_image8.png">
+        <img src="images/retreat_image9.png">
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.carousel_slide').carousel({
+            interval: false
+        });
+    });
+</script>
+
+</body>
+</html>
